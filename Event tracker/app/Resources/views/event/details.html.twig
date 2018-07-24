@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+        <div class="container">
+        <a class="btn btn-secondary" style="margin-top:20px;" href="/">Back to Events</a>
+        <hr>
+
+        <h2 class="page-header mt-5">{{event.name}}</h2>
+        <img src='{{event.image}}' style="width: 400px; height:400px;box-shadow: 0px 0px 20px black;">
+        <br><br>
+
+        <ul class="list-group">
+
+                <li class="list-group-item"><b>description :</b> {{event.description}}</li>
+
+                <li class="list-group-item"><b>capacity :</b> {{event.capacity}}</li>
+
+                <li class="list-group-item"><b>Phone :</b> {{event.PhoneNumber}}</li>
+
+                <li class="list-group-item"><b>E-mail :</b> {{event.email}}</li>
+
+                <li class="list-group-item"><b>Address :</b> {{event.address}}</li>
+
+        </ul>
+        
+        </div>
+{% endblock %}

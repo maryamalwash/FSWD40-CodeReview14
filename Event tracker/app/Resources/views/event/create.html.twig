@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="container">
+	
+	<a class="btn btn btn-light" style="margin-top:20px;" href="/">Back to Events</a>
+	
+	<hr>
+
+	<h2 class="page-header">Add Events</h2>
+
+	{{form_start(form)}}
+
+	{{form_widget(form)}}
+
+	{{form_end(form)}}
+
+<div>
+{% endblock %}
